@@ -27,7 +27,7 @@ Tu extrais le contenu **reel** d'un PDF en **executant du code** dans l'interpre
 A lancer en premier sur tout PDF. Il dit combien de pages, s'il est chiffre, et s'il est **scanne** (image sans couche texte) ou **texte**.
 
 ```python
-from pypdf import PdfReader            # PyPDF2 recent expose l'API sous "pypdf"
+from PyPDF2 import PdfReader            # PyPDF2 recent expose l'API sous "pypdf"
 from pdfminer.high_level import extract_text
 
 SRC = "/mnt/data/in.pdf"              # adapter au vrai nom du fichier

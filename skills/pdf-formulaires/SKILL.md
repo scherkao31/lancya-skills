@@ -47,7 +47,7 @@ cas limites (overlay sur un PDF sans champs).
 ## Etape 1 : inspecter et lister les champs
 
 ```python
-from pypdf import PdfReader
+from PyPDF2 import PdfReader
 
 CHEMIN = "/mnt/data/formulaire.pdf"
 reader = PdfReader(CHEMIN)
@@ -96,7 +96,7 @@ On ouvre le formulaire, on l'ajoute a un writer, on remplit page par page, on ec
 resultat.
 
 ```python
-from pypdf import PdfReader, PdfWriter
+from PyPDF2 import PdfReader, PdfWriter
 
 ENTREE = "/mnt/data/formulaire.pdf"
 SORTIE = "/mnt/data/formulaire_rempli.pdf"
@@ -175,7 +175,7 @@ l'ouverture. Utile quand le texte saisi ne s'affiche pas dans certains lecteurs.
 restent editables.
 
 ```python
-from pypdf import PdfReader, PdfWriter
+from PyPDF2 import PdfReader, PdfWriter
 from pypdf.generic import NameObject, BooleanObject
 
 reader = PdfReader(ENTREE)
@@ -206,7 +206,7 @@ champs interactifs. C'est le bon choix pour un document final a transmettre ou a
 plus personne ne peut modifier les champs.
 
 ```python
-from pypdf import PdfReader, PdfWriter
+from PyPDF2 import PdfReader, PdfWriter
 
 reader = PdfReader(ENTREE)
 writer = PdfWriter()
@@ -257,7 +257,7 @@ bons endroits. Il faut connaitre les coordonnees (origine en bas a gauche, en po
 
 ```python
 import io
-from pypdf import PdfReader, PdfWriter
+from PyPDF2 import PdfReader, PdfWriter
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 

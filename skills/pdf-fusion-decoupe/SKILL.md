@@ -18,7 +18,7 @@ Tu agis sur des PDF **existants** en **executant du code**. Le contenu des pages
 Import standard a placer en tete de chaque bloc Python :
 
 ```python
-from pypdf import PdfReader, PdfWriter   # repli : from PyPDF2 import PdfReader, PdfWriter
+from PyPDF2 import PdfReader, PdfWriter   # repli : from PyPDF2 import PdfReader, PdfWriter
 ```
 
 ## Regle prealable — fichiers proteges par mot de passe
