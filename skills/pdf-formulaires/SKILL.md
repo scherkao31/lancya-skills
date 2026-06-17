@@ -1,7 +1,7 @@
 ---
 name: pdf-formulaires
-description: Utiliser cette skill des que l'utilisateur veut remplir un formulaire PDF, completer des champs d'un PDF, pre-remplir un formulaire administratif (demande, inscription, declaration, contrat a signer), cocher des cases ou figer les valeurs saisies dans un PDF a champs interactifs (AcroForm). Ne pas utiliser pour extraire du texte (voir pdf-extraction), pour fusionner ou decouper des PDF (voir pdf-fusion-decoupe), ni pour creer un PDF de zero (voir pdf-creation).
-when-to-use: L'utilisateur fournit un formulaire PDF deja construit avec des champs interactifs et veut le remplir par code, sans le rouvrir manuellement dans un lecteur PDF. Typiquement : un formulaire administratif suisse, une demande d'allocation, un bulletin d'inscription, un contrat type. La skill detecte les champs, les remplit, gere les cases a cocher et les boutons radio, puis aplatit le rendu si on veut figer les valeurs.
+description: "Utiliser cette skill des que l'utilisateur veut remplir un formulaire PDF, completer des champs d'un PDF, pre-remplir un formulaire administratif (demande, inscription, declaration, contrat a signer), cocher des cases ou figer les valeurs saisies dans un PDF a champs interactifs (AcroForm). Ne pas utiliser pour extraire du texte (voir pdf-extraction), pour fusionner ou decouper des PDF (voir pdf-fusion-decoupe), ni pour creer un PDF de zero (voir pdf-creation)."
+when-to-use: "L'utilisateur fournit un formulaire PDF deja construit avec des champs interactifs et veut le remplir par code, sans le rouvrir manuellement dans un lecteur PDF. Typiquement : un formulaire administratif suisse, une demande d'allocation, un bulletin d'inscription, un contrat type. La skill detecte les champs, les remplit, gere les cases a cocher et les boutons radio, puis aplatit le rendu si on veut figer les valeurs."
 always-apply: false
 ---
 
