@@ -1,6 +1,6 @@
 ---
 name: pdf-creation
-description: "Cree de vrais PDF mis en page de niveau professionnel en EXECUTANT DU CODE (interpreteur souverain) avec reportlab (Platypus) : rapport, facture, attestation, courrier, fiche, brochure simple. Couvre format A4 et marges, bandeau de titre, sections, tableaux colores, images, polices et couleurs, en-tetes et pieds de page avec numerotation. Utiliser cette skill des que l'utilisateur veut CREER ou GENERER un PDF mis en page : rapport, facture, devis, attestation, certificat, fiche, courrier, brochure simple. Ne pas utiliser pour extraire du texte/des tableaux d'un PDF (skill pdf-extraction), pour remplir un formulaire PDF (skill pdf-formulaires), pour fusionner/decouper/pivoter des PDF (skill pdf-fusion-decoupe), ni pour produire un Word (skill document-word), un Excel (skill tableur-excel) ou une presentation/slides (skill html-slides)."
+description: "Cree de vrais PDF mis en page de niveau professionnel en EXECUTANT DU CODE (interpreteur de code) avec reportlab (Platypus) : rapport, facture, attestation, courrier, fiche, brochure simple. Couvre format A4 et marges, bandeau de titre, sections, tableaux colores, images, polices et couleurs, en-tetes et pieds de page avec numerotation. Utiliser cette skill des que l'utilisateur veut CREER ou GENERER un PDF mis en page : rapport, facture, devis, attestation, certificat, fiche, courrier, brochure simple. Ne pas utiliser pour extraire du texte/des tableaux d'un PDF (skill pdf-extraction), pour remplir un formulaire PDF (skill pdf-formulaires), pour fusionner/decouper/pivoter des PDF (skill pdf-fusion-decoupe), ni pour produire un Word (skill document-word), un Excel (skill tableur-excel) ou une presentation/slides (skill html-slides)."
 when-to-use: "L'utilisateur veut creer ou generer un PDF MIS EN PAGE : rapport, facture, devis, attestation, certificat, fiche, courrier, brochure. Pas pour lire/extraire, remplir un formulaire, fusionner/decouper, ni pour un Word/Excel/slides."
 always-apply: false
 ---
@@ -240,7 +240,7 @@ NUM, DATE, ECHEANCE = "F-2026-0042", "17.06.2026", "17.07.2026"
 
 lignes = [
     # description, qte, prix unitaire HT, total HT
-    ("Conseil et integration IA souveraine", 12, 180.00),
+    ("Conseil et integration IA (hebergee en Suisse)", 12, 180.00),
     ("Hebergement Infomaniak (mensuel)",      1, 90.00),
     ("Formation equipe (demi-journee)",       2, 600.00),
 ]

@@ -1,13 +1,13 @@
 ---
 name: analyse-donnees
-description: "Analyse de donnees et visualisations a partir d'un CSV, Excel ou JSON, en EXECUTANT DU CODE (interpreteur souverain) : pandas + numpy pour charger, nettoyer, explorer et calculer des statistiques, matplotlib + seaborn pour produire des graphiques soignes sauves en PNG. Utiliser cette skill des que l'utilisateur veut ANALYSER des donnees, calculer des statistiques, faire un tableau croise, reperer des tendances, comparer des groupes, mesurer des correlations, ou produire des GRAPHIQUES (histogramme, barres, courbe, nuage de points, boite a moustaches, heatmap) a partir d'un fichier CSV / Excel / JSON. Ne pas utiliser quand le livrable est un fichier tableur mis en forme et telechargeable (skill tableur-excel), ni quand une simple reponse texte sans calcul ni graphique suffit."
+description: "Analyse de donnees et visualisations a partir d'un CSV, Excel ou JSON, en EXECUTANT DU CODE (interpreteur de code) : pandas + numpy pour charger, nettoyer, explorer et calculer des statistiques, matplotlib + seaborn pour produire des graphiques soignes sauves en PNG. Utiliser cette skill des que l'utilisateur veut ANALYSER des donnees, calculer des statistiques, faire un tableau croise, reperer des tendances, comparer des groupes, mesurer des correlations, ou produire des GRAPHIQUES (histogramme, barres, courbe, nuage de points, boite a moustaches, heatmap) a partir d'un fichier CSV / Excel / JSON. Ne pas utiliser quand le livrable est un fichier tableur mis en forme et telechargeable (skill tableur-excel), ni quand une simple reponse texte sans calcul ni graphique suffit."
 when-to-use: "L'utilisateur fournit (ou evoque) un CSV / Excel / JSON et veut une analyse chiffree, des statistiques, un tableau croise, des tendances, des correlations ou des graphiques. Le livrable est une synthese chiffree accompagnee de figures PNG, pas un classeur mis en forme."
 always-apply: false
 ---
 
 # Analyse de donnees et visualisations (pandas + matplotlib)
 
-Tu analyses des donnees **en executant du code Python** dans l'interpreteur souverain, puis tu restitues une **synthese chiffree accompagnee de graphiques**. Regle absolue : toute affirmation chiffree vient d'un calcul reel sur les donnees (jamais d'estimation), et **chaque figure est sauvee en PNG dans `/mnt/data`** avec un titre, des axes legendes et une mise en forme soignee.
+Tu analyses des donnees **en executant du code Python** dans l'interpreteur de code, puis tu restitues une **synthese chiffree accompagnee de graphiques**. Regle absolue : toute affirmation chiffree vient d'un calcul reel sur les donnees (jamais d'estimation), et **chaque figure est sauvee en PNG dans `/mnt/data`** avec un titre, des axes legendes et une mise en forme soignee.
 
 Documentation de reference : pandas (https://pandas.pydata.org/docs/) et matplotlib (https://matplotlib.org/stable/).
 

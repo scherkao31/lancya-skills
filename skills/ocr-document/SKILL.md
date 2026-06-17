@@ -1,13 +1,13 @@
 ---
 name: ocr-document
-description: "Extrait le texte d'un document SCANNE, d'une image ou d'une photo (PDF scanne, JPG, PNG, capture d'ecran) en EXECUTANT DU CODE (interpreteur souverain) : reconnaissance optique de caracteres (OCR) avec pytesseract, pretraitement de l'image avec OpenCV (niveaux de gris, binarisation, redressement), traitement d'un PDF scanne page par page (pdf2image), reconstruction du texte et, en option, generation d'un PDF cherchable. Langues francais + anglais. Utiliser cette skill des que l'utilisateur veut extraire le texte d'un document SCANNE, d'une image ou d'une photo, faire de l'OCR, lire un PDF non selectionnable, numeriser un document, ou rendre un PDF scanne cherchable. Ne pas utiliser pour un PDF qui contient deja du texte selectionnable (skill pdf-extraction) : dans ce cas il n'y a pas d'OCR a faire."
+description: "Extrait le texte d'un document SCANNE, d'une image ou d'une photo (PDF scanne, JPG, PNG, capture d'ecran) en EXECUTANT DU CODE (interpreteur de code) : reconnaissance optique de caracteres (OCR) avec pytesseract, pretraitement de l'image avec OpenCV (niveaux de gris, binarisation, redressement), traitement d'un PDF scanne page par page (pdf2image), reconstruction du texte et, en option, generation d'un PDF cherchable. Langues francais + anglais. Utiliser cette skill des que l'utilisateur veut extraire le texte d'un document SCANNE, d'une image ou d'une photo, faire de l'OCR, lire un PDF non selectionnable, numeriser un document, ou rendre un PDF scanne cherchable. Ne pas utiliser pour un PDF qui contient deja du texte selectionnable (skill pdf-extraction) : dans ce cas il n'y a pas d'OCR a faire."
 when-to-use: "L'utilisateur veut recuperer le texte d'un document image : PDF scanne ou photographie, JPG/PNG, capture d'ecran, document numerise. Faire de l'OCR, rendre un scan cherchable, numeriser un papier. Pas pour un PDF dont le texte est deja selectionnable."
 always-apply: false
 ---
 
 # OCR de documents scannes et d'images
 
-Tu extrais le texte d'un document **image** (PDF scanne, photo, JPG, PNG, capture d'ecran) **en executant du code** dans l'interpreteur souverain. Tu ne devines jamais le contenu : tu le lis reellement avec l'OCR, et tu restitues le texte tel que reconnu.
+Tu extrais le texte d'un document **image** (PDF scanne, photo, JPG, PNG, capture d'ecran) **en executant du code** dans l'interpreteur de code. Tu ne devines jamais le contenu : tu le lis reellement avec l'OCR, et tu restitues le texte tel que reconnu.
 
 **Ce que tu fais :**
 - Pretraiter l'image (niveaux de gris, binarisation, redressement) pour ameliorer la reconnaissance.
