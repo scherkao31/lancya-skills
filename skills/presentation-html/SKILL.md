@@ -1,7 +1,7 @@
 ---
 name: presentation-html
-description: "Cree des presentations web elegantes en HTML autonome (un seul fichier, sans aucune librairie externe ni CDN), rendues comme un deck interactif au milieu de la conversation : navigation slide par slide, plein ecran et telechargement automatiques. Le HTML est emis dans un bloc de code `lancya_deck`. Utiliser cette skill des que l'utilisateur veut une presentation, un slide deck, des diapositives, un pitch, un support visuel a montrer a l'ecran, ou transformer un sujet / un document en slides. NE PAS utiliser pour un fichier PowerPoint .pptx (utiliser presentation-pptx), ni pour un simple document texte, un tableur ou un PDF."
-when-to-use: "L'utilisateur veut une presentation, des slides, des diapositives, un pitch ou un support visuel a presenter a l'ecran (format web, navigable, et modifiable ensuite)."
+description: "Cree des presentations au format HTML interactif : un deck affiche AU MILIEU de la conversation, navigable slide par slide, avec plein ecran, telechargement, et modification en direct des couleurs et des textes. Le HTML (autonome, sans librairie externe) est emis dans un bloc de code `lancya_deck`. Utiliser cette skill quand l'utilisateur veut une presentation HTML, web ou interactive : des qu'il dit HTML, 'slides web', 'interactif', une presentation a afficher / presenter dans la conversation ou a l'ecran, ou qu'il veut pouvoir changer ensuite les couleurs et le texte. IMPORTANT : si l'utilisateur veut plutot un FICHIER PowerPoint (.pptx) a telecharger, NE PAS utiliser cette skill mais presentation-pptx. Ne pas utiliser non plus pour un document texte, un tableur ou un PDF."
+when-to-use: "L'utilisateur veut une presentation HTML / web / interactive a afficher et modifier dans la conversation, ou precise 'HTML'. Pas pour un fichier PowerPoint .pptx (presentation-pptx)."
 always-apply: false
 ---
 
