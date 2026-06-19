@@ -1,6 +1,6 @@
 ---
 name: presentation-html
-description: "Cree des presentations web elegantes et autonomes en HTML (un seul fichier, sans aucune librairie externe ni CDN), affichees et navigables slide par slide dans l'apercu. Utiliser cette skill des que l'utilisateur veut une presentation, un slide deck, des diapositives, un pitch, un support visuel a montrer a l'ecran, ou transformer un sujet / un document en slides. Produire un fichier HTML autonome avec navigation visible. NE PAS utiliser pour un fichier PowerPoint .pptx (utiliser presentation-pptx), ni pour un simple document texte, un tableur ou un PDF."
+description: "Cree des presentations web elegantes en HTML autonome (un seul fichier, sans aucune librairie externe ni CDN), rendues comme un deck interactif au milieu de la conversation : navigation slide par slide, plein ecran et telechargement automatiques. Le HTML est emis dans un bloc de code `lancya_deck`. Utiliser cette skill des que l'utilisateur veut une presentation, un slide deck, des diapositives, un pitch, un support visuel a montrer a l'ecran, ou transformer un sujet / un document en slides. NE PAS utiliser pour un fichier PowerPoint .pptx (utiliser presentation-pptx), ni pour un simple document texte, un tableur ou un PDF."
 when-to-use: "L'utilisateur veut une presentation, des slides, des diapositives, un pitch ou un support visuel a presenter a l'ecran (format web, navigable, et modifiable ensuite)."
 always-apply: false
 ---
@@ -27,9 +27,9 @@ Fais un travail remarquable. Tu es libre du style, des mises en page, du rythme.
 </style>
 ```
 
-## Convention 2 — Une slide = une section, navigation visible
-- Chaque diapositive est une `<section class="slide">...</section>`, enfant direct d'un conteneur. UNE seule slide visible a la fois, en plein cadre, format 16:9.
-- Ajoute une navigation VISIBLE et autonome (code-la toi-meme en JavaScript simple, sans librairie) : bouton precedent et bouton suivant bien visibles, plus un compteur (par exemple 03 / 09). Les fleches du clavier doivent aussi marcher.
+## Convention 2 — Une slide = une section (la navigation est automatique)
+- Chaque diapositive est une `<section class="slide">...</section>`, enfant direct de `<body>`. Concois chaque slide pour remplir tout le cadre, format 16:9.
+- N'ajoute PAS toi-meme de navigation (ni boutons precedent/suivant, ni script qui change de slide, ni compteur). L'interface s'en charge automatiquement : elle affiche une slide a la fois, ajoute les boutons, le compteur et les fleches du clavier. Tu te contentes d'ecrire les slides les unes apres les autres.
 - Chaque slide s'affiche d'un coup. PAS d'effet ou il faut cliquer plusieurs fois pour reveler le texte morceau par morceau.
 
 ## Autonomie technique (robustesse)
@@ -43,4 +43,13 @@ Fais un travail remarquable. Tu es libre du style, des mises en page, du rythme.
 Pas d'emojis, pas de titres en Majuscule A Chaque Mot, pas de remplissage. Phrases nettes, une idee par slide. Respecte les regles de style generales de Lancya (pas de tiret cadratin, ton humain et direct).
 
 ## Livrable
-Rends le tout dans un seul artifact HTML, pret a etre presente en plein ecran et telecharge.
+Rends le deck dans un bloc de code dont le langage est EXACTEMENT `lancya_deck`, contenant le HTML complet (de `<!DOCTYPE html>` a `</html>`) :
+
+```lancya_deck
+<!DOCTYPE html>
+<html lang="fr">
+... le deck complet (slides en sections, palette en :root) ...
+</html>
+```
+
+L'interface affiche alors ce bloc comme une presentation interactive au milieu de la conversation : navigation slide par slide, plein ecran et telechargement automatiques. N'ecris rien apres le bloc.
