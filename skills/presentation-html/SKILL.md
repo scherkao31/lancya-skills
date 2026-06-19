@@ -28,7 +28,7 @@ Fais un travail remarquable. Tu es libre du style, des mises en page, du rythme.
 ```
 
 ## Convention 2 — Une slide = une section (la navigation est automatique)
-- Chaque diapositive est une `<section class="slide">...</section>`, enfant direct de `<body>`. Concois chaque slide pour remplir tout le cadre, format 16:9.
+- Chaque diapositive est une `<section class="slide">...</section>`, enfant direct de `<body>`. Concois chaque slide pour un canevas FIXE de 1280 x 720 pixels (format 16:9) : dimensionne les polices, marges et espacements pour cette taille. Tu n'as PAS a gerer le responsive (vw/vh) : l'interface met automatiquement ce canevas a l'echelle pour l'afficher dans le widget comme en plein ecran. Vise un contenu qui remplit joliment ces 1280 x 720 sans deborder.
 - N'ajoute PAS toi-meme de navigation (ni boutons precedent/suivant, ni script qui change de slide, ni compteur). L'interface s'en charge automatiquement : elle affiche une slide a la fois, ajoute les boutons, le compteur et les fleches du clavier. Tu te contentes d'ecrire les slides les unes apres les autres.
 - Chaque slide s'affiche d'un coup. PAS d'effet ou il faut cliquer plusieurs fois pour reveler le texte morceau par morceau.
 
