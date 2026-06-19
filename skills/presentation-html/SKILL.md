@@ -52,4 +52,4 @@ Rends le deck dans un bloc de code dont le langage est EXACTEMENT `lancya_deck`,
 </html>
 ```
 
-L'interface affiche alors ce bloc comme une presentation interactive au milieu de la conversation : navigation slide par slide, plein ecran et telechargement automatiques. N'ecris rien apres le bloc.
+Emets UNIQUEMENT ce bloc dans ta reponse : RIEN avant, RIEN apres (le bloc est le message entier, pas de phrase d'introduction ni de conclusion). C'est important : l'interface affiche le bloc comme une presentation interactive (navigation, plein ecran, telechargement) ET enregistre les modifications de l'utilisateur (couleurs, texte) directement dans ce bloc, pour que tu repartes de leur version si on te redemande de la modifier. Une phrase autour du bloc casserait cette sauvegarde.
