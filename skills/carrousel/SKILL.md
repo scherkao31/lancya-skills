@@ -17,6 +17,7 @@ Fais des cartes belles et percutantes, pensees pour etre vues en petit sur mobil
 - N'ajoute PAS de navigation toi-meme (ni boutons, ni script de slides) : l'interface s'en charge. Tu ecris juste les cartes les unes apres les autres.
 - **Couleurs en variables CSS** : palette dans `:root` (`--bg`, `--text`, `--accent`, + `--muted`/`--accent-2` au besoin), utilisee partout. Permet de recolorer.
 - **Un seul fichier HTML autonome**, sans librairie externe ni CDN. Polices systeme.
+- **Legende du post** : ajoute dans le `<head>` une balise `<meta name="lancya-caption" content="...">` contenant une legende d'accroche prete a publier (le texte du post qui accompagne le carrousel : accroche, valeur, et un petit appel a l'action ou des hashtags si pertinent). L'interface l'affiche dans un champ editable sous l'apercu. Echappe les guillemets doubles en `&quot;` dans l'attribut.
 
 ## Structure d'un bon carrousel
 - **Carte 1 = l'accroche** : un titre fort qui donne envie de swiper (la promesse, la question, le chiffre choc).
